@@ -8,10 +8,10 @@ using namespace std;
 int main(){
     int gd=DETECT,gm;
     initgraph(&gd,&gm,(char*)"");
-    float x0=100;
-     float y0=100;
-     float xn=500;
-     float yn=600;
+    float x0=2;
+     float y0=3;
+     float xn=9;
+     float yn=8;
      float x_old=x0;
      float y_old=y0;
     float x_new=0;
