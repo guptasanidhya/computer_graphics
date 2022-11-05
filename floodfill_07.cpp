@@ -6,21 +6,13 @@ using namespace std;
 void flood(int x,int y,int fillColor, int defaultColor)  
 {  
     if(getpixel(x,y)==defaultColor)  
-    {  
-        delay(1);  
+    {  cout<<x<<","<<y<<endl;
+        delay(0.2);  
         putpixel(x,y,fillColor);
         flood(x+1,y,fillColor,defaultColor);  
-        printf("f1 ");
-        cout<<x+1<<","<<y<<endl;
-        flood(x-1,y,fillColor,defaultColor);  
-        printf("f2 ");
-        cout<<x-1<<","<<y<<endl;
+         
         flood(x,y+1,fillColor,defaultColor);  
-        printf("f3 ");
-        cout<<x<<","<<y+1<<endl;
         flood(x,y-1,fillColor,defaultColor);  
-        printf("f4 ");
-        cout<<x-1<<","<<y-1<<endl;
     }
     else{
         cout<<"exit point "<<x<<","<<y<<endl;
